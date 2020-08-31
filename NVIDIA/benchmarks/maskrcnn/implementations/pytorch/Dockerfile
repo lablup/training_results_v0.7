@@ -23,7 +23,7 @@ RUN apt-get update \
  && rm -rf /var/lib/apt/lists/*
 
 # Install Python dependencies
-WORKDIR /workspace/object_detection
+WORKDIR /home/work/mlp/training_results_v0.7/NVIDIA/benchmarks/maskrcnn/implementations/pytorch
 
 COPY requirements.txt .
 RUN pip install --no-cache-dir https://github.com/mlperf/logging/archive/9ea0afa.zip \
